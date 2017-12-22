@@ -1,0 +1,31 @@
+mib: NETTRACK-E3METER-SNMP-MIB
+modules:
+    sensors:
+        UGroup:
+            data:
+                -
+                    oid: e3IpmUGroupTable
+                    value: e3IpmUGName
+                    num_oid: .1.3.6.1.4.1.21695.1.10.7.5.1.2.
+                    descr: Name
+        PGroup:
+            data:
+                -
+                    oid: e3IpmPGroupTable
+                    value: e3IpmPGName
+                    num_oid: .1.3.6.1.4.1.21695.1.10.7.4.1.2.
+                    descr: Name
+        sensor:
+            data:
+                -
+                    oid: e3IpmSensorTable
+                    value: e3IpmSensorTemperatureCelsius
+                    num_oid: .1.3.6.1.4.1.21695.1.10.7.3.1.4.
+                    descr: Temperature
+        meter:
+            data:
+                -
+                    oid: e3IpmMeterTable
+                    value: e3IpmFrequency
+                    num_oid: .1.3.6.1.4.1.21695.1.10.7.2.1.10.
+                    descr: Frequency
